@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Manrope, Open_Sans } from "next/font/google";
+
+import { Footer } from "../components/Footer";
+import { cx } from "class-variance-authority";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  variable: "--open-sans",
+});
+
+const manrope = Manrope({ subsets: ["latin"], variable: "--manrope" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cx(openSans.variable, manrope.variable, "bg-white")}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

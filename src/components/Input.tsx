@@ -8,11 +8,11 @@ import { ExclamationTriangleIcon } from "@heroicons/react/24/solid";
 import { cva, cx, VariantProps } from "class-variance-authority";
 
 const inputStyles = cva(
-  "w-full !appearance-none text-brand-textBlack  rounded-md border font-normal leading-loose focus:border px-3 sm:text-sm  focus:outline-none",
+  "w-full !appearance-none text-brand-blue  leading-loose !rounded-full border-2  leading-loose focus:border px-3 sm:text-sm  focus:outline-none",
   {
     defaultVariants: {
       error: false,
-      intent: "normal",
+      intent: "fill",
       size: "md",
     },
     variants: {
@@ -20,13 +20,11 @@ const inputStyles = cva(
         true: "!border-rose-500",
       },
       intent: {
-        fill: "bg-gray-100 border-gray-200 focus:border-brand-textInput",
-        normal:
-          "border-gray-300 placeholder:text-gray-200  focus:border-brand-textInput bg-transparent",
+        fill: "!bg-white  focus:border-brand-green",
       },
       size: {
         lg: "h-16",
-        md: "h-12",
+        md: "h-12 ",
         sm: "h-10",
       },
     },

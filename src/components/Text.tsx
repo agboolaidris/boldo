@@ -10,7 +10,7 @@ export function Title({ className, ...rest }: TitleProps) {
   return (
     <h2
       className={cx(
-        "text-lg font-bold text-brand-textBlack sm:text-2xl",
+        "text-3xl font-manrope leading-[1.8] sm:leading-[1.5] sm:text-5xl font-light",
         className
       )}
       {...rest}
@@ -21,7 +21,10 @@ export function Title({ className, ...rest }: TitleProps) {
 export function BodyText({ className, ...rest }: TitleProps) {
   return (
     <p
-      className={cx("text-base font-normal text-brand-textBlack", className)}
+      className={cx(
+        "text-base font-normal text-brand-gray leading-relaxed font-open-sans",
+        className
+      )}
       {...rest}
     />
   );

@@ -14,15 +14,16 @@ const buttonStyle = cva(
     variants: {
       block: { true: "!w-full" },
       kinds: {
-        normal: "border-none pl-0 hover:opacity-70",
-        primary: "bg-brand-blue text-white hover:bg-opacity-80 shadow-sm",
-        secondary: "border border-gray-300 hover:opacity-70",
+        normal: "border-white !border text-white  hover:opacity-70",
+        primary: "bg-black text-white hover:bg-opacity-80 shadow-sm",
+        secondary: "bg-white  text-brand-blue hover:opacity-70",
+        active: "bg-brand-green  hover:bg-opacity-75 text-brand-blue",
       },
       rounded: {
         true: "!rounded-full",
       },
       size: {
-        lg: "px-3.5 py-2.5",
+        lg: "px-8 py-4",
         md: "px-4 py-3",
         sm: "px-2.5 py-3",
       },

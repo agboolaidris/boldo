@@ -10,11 +10,15 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          blue: "#001F3F",
-          textBlack: "#111827",
-          textInput: "#333333",
-          whiteBg: "#F6F6F6",
+          green: "#65E4A3",
+          blue: "#0A2640",
+          gray: "#777777",
         },
+      },
+      fontFamily: {
+        manrope: ["var(--manrope)"],
+        "open-sans": ["var(--open-sans)"],
+        sofiat: ["var(--sofiat)"],
       },
     },
   },
