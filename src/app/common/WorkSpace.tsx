@@ -11,14 +11,14 @@ const content = [
 export const WorkSpace = () => {
   return (
     <div>
-      <div className="relative w-full aspect-[5/2] rounded-3xl overflow-hidden">
+      <div className="relative w-full aspect-video sm:aspect-[5/2] rounded-xl sm:rounded-3xl overflow-hidden">
         <Image fill src="/work-space.svg" alt="work-space" objectFit="cover" />
       </div>
       <div className="grid md:grid-cols-2 mt-4 sm:mt-8 gap-8">
         <div className="mt-8">
           <Title className="md:!text-4xl tracking-wider md:!leading-[2]">
-            We connect our customers <br /> with the best, and help them <br />{" "}
-            keep up-and stay open.
+            We connect our customers with the best, and help them keep up and
+            stay open.
           </Title>
         </div>
         <div>

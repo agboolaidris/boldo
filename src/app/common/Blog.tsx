@@ -42,7 +42,7 @@ export const Blogs = () => {
           Value proposition accelerator product <br /> management venture
         </Title>
       </div>
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-8 sm:mt-16">
+      <div className="grid gap-y-16 gap-x-8 sm:grid-cols-2 lg:grid-cols-3 mt-8 sm:mt-16">
         {blogs.map(
           (
             { author, authorProfile, image, title, category, createdAt },
@@ -78,7 +78,7 @@ export const Blogs = () => {
         rounded
         kinds="normal"
         size="lg"
-        className="!text-black !border-black mx-auto mt-32"
+        className="!text-black !border-black mx-auto mt-16 sm:mt-32"
       >
         Load more
       </Button>

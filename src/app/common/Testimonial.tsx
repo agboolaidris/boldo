@@ -52,8 +52,8 @@ export const Testimonial = () => {
   return (
     <div>
       <div className="sm:flex gap-4 space-y-8 items-end justify-between">
-        <Title className="text-white">
-          An enterprise template to ramp <br /> up your company website
+        <Title className="text-white max-w-3xl">
+          An enterprise template to ramp up your company website
         </Title>
         <div className="flex gap-4 ml-auto w-max">
           <Button kinds="secondary" className="!rounded-full !p-4">

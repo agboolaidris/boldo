@@ -1,5 +1,5 @@
 import { Button } from "@ui/Button";
-//import { Input } from "@ui/Input";
+import { Input } from "@ui/Input";
 import { Title } from "@ui/Text";
 import React from "react";
 
@@ -13,14 +13,14 @@ export const Subscription = () => {
         </Title>
       </div>
 
-      <div className="mt-8 flex items-center w-max mx-auto gap-2">
-        {/* <div className="sm:w-96 w-full flex-1">
+      <div className="mt-8 flex items-center w-full max-w-xl mx-auto gap-2">
+        <div className="flex-1">
           <Input
             intent="fill"
             className="px-8"
             placeholder="Your email address"
           />
-        </div> */}
+        </div>
         <Button kinds="active" size="lg" rounded>
           Start now
         </Button>
