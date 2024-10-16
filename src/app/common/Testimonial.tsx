@@ -78,7 +78,7 @@ export const Testimonial = () => {
                     <Image src={profile} alt={fullName} fill />
                   </div>
                   <div>
-                    <BodyText className="text-black !font-semibold">
+                    <BodyText className="!text-black !font-semibold">
                       {fullName}
                     </BodyText>
                     <BodyText>{position}</BodyText>

@@ -3,6 +3,7 @@ import { BodyText, Title } from "@ui/Text";
 import Image from "next/image";
 import React from "react";
 import { formatDate } from "../../utils/date";
+import { FadeIn } from "@ui/Fadein";
 
 const blogs = [
   {
@@ -36,19 +37,21 @@ const blogs = [
 export const Blogs = () => {
   return (
     <div>
-      <div className="text-center">
-        <BodyText>Our Blog</BodyText>
-        <Title>
-          Value proposition accelerator product <br /> management venture
-        </Title>
-      </div>
+      <FadeIn>
+        <div className="text-center">
+          <BodyText>Our Blog</BodyText>
+          <Title>
+            Value proposition accelerator product <br /> management venture
+          </Title>
+        </div>
+      </FadeIn>
       <div className="grid gap-y-16 gap-x-8 sm:grid-cols-2 lg:grid-cols-3 mt-8 sm:mt-16">
         {blogs.map(
           (
             { author, authorProfile, image, title, category, createdAt },
             idx
           ) => (
-            <div key={idx}>
+            <FadeIn key={idx}>
               <div className="relative aspect-video w-full bg-gray-50 rounded-md overflow-hidden">
                 <Image src={image} alt={title} fill objectFit="cover" />
               </div>
@@ -70,7 +73,7 @@ export const Blogs = () => {
                 </div>
                 <BodyText className="text-black font-medium">{author}</BodyText>
               </div>
-            </div>
+            </FadeIn>
           )
         )}
       </div>

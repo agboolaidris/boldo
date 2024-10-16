@@ -1,6 +1,4 @@
-# Next TailwindCSS Boilerplate
-
-Boilerplate for Nextjs and TailwindCSS with some advance fixtures
+# Boldo landing page
 
 ##### Steps to run this project:
 
@@ -13,3 +11,4 @@ Boilerplate for Nextjs and TailwindCSS with some advance fixtures
 2. Typescript
 3. TailwindCSS
 4. class-variance-authority
+5. motion

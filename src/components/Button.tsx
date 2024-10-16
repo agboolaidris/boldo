@@ -15,7 +15,7 @@ const buttonStyle = cva(
       block: { true: "!w-full" },
       kinds: {
         normal: "border-white !border text-white  hover:opacity-70",
-        primary: "bg-black text-white hover:bg-opacity-80 shadow-sm",
+        primary: "bg-brand-blue text-white hover:bg-opacity-80 shadow-sm",
         secondary: "bg-white  text-brand-blue hover:opacity-70",
         active: "bg-brand-green  hover:bg-opacity-75 text-brand-blue",
       },

@@ -10,6 +10,7 @@ import { Testimonial } from "./common/Testimonial";
 import { Blogs } from "./common/Blog";
 import { Subscription } from "./common/Subscription";
 import { WorkSpace } from "./common/WorkSpace";
+import { FadeIn } from "@ui/Fadein";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         <div className="relative z-40">
           <Navbar />
           <Wrapper className="gap-12 grid lg:grid-cols-2">
-            <div>
+            <FadeIn>
               <div className="py-8 sm:py-16 w-full max-w-xl ">
                 <Title className="text-white">
                   Save time by building fast with Boldo Template
@@ -38,13 +39,15 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-            </div>
+            </FadeIn>
 
-            <div className="hidden lg:block">
-              <div className="ml-auto relative aspect-square w-full flex-1 max-w-lg">
-                <Image src="/chart.svg" alt="" fill />
+            <FadeIn>
+              <div className="hidden lg:block">
+                <div className="ml-auto relative aspect-square w-full flex-1 max-w-lg">
+                  <Image src="/chart.svg" alt="" fill />
+                </div>
               </div>
-            </div>
+            </FadeIn>
           </Wrapper>
           <Wrapper>
             <Brands />
@@ -63,6 +66,7 @@ export default function Home() {
           <Testimonial />
         </Wrapper>
       </section>
+
       <section className="py-16 sm:py-32">
         <Wrapper size="lg">
           <WorkSpace />
