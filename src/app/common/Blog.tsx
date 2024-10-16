@@ -58,7 +58,7 @@ export const Blogs = () => {
               <div className="flex gap-2 mt-3">
                 <BodyText className="!text-black font-semibold">
                   {category}
-                </BodyText>{" "}
+                </BodyText>
                 <BodyText>{formatDate(createdAt, "MMMM DD YYYY")}</BodyText>
               </div>
               <BodyText className="text-xl !text-black mt-4">{title}</BodyText>

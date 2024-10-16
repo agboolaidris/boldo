@@ -75,7 +75,7 @@ export const Testimonial = () => {
                 </BodyText>
                 <div className="mt-12 flex gap-4">
                   <div className="bg-gray-100 relative w-16 aspect-square rounded-full overflow-hidden">
-                    <Image src={profile} alt={fullName} fill />
+                    <Image src={profile} alt={fullName} fill objectFit="fill" />
                   </div>
                   <div>
                     <BodyText className="!text-black !font-semibold">

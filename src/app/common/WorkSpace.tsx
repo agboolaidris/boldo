@@ -12,7 +12,7 @@ const content = [
 export const WorkSpace = () => {
   return (
     <div>
-      <div className="relative w-full aspect-video sm:aspect-[5/2] rounded-xl sm:rounded-3xl overflow-hidden">
+      <div className="relative w-full aspect-video sm:aspect-[5/2] rounded-xl sm:rounded-3xl overflow-hidden bg-gray-50">
         <Image fill src="/work-space.svg" alt="work-space" objectFit="cover" />
       </div>
 

@@ -36,7 +36,7 @@ export const Navbar = () => {
               {label}
             </Link>
           ))}
-          <Button size="lg" kinds="secondary" rounded>
+          <Button size="sm" kinds="secondary" rounded className="!px-8">
             Log in
           </Button>
         </div>
